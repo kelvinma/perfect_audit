@@ -22,7 +22,7 @@ describe PerfectAudit::DocumentsRepository do
     ]}
 
     before {
-      stub_request(:post, /perfectaudit/).to_return(body: json(:success_body), status: 200)
+      stub_request(:post, /ocrolus/).to_return(body: json(:success_body), status: 200)
     }
 
     it { expect(documents).to respond_to(:create) }

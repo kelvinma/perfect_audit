@@ -17,7 +17,7 @@ describe PerfectAudit::Connection do
 
   describe '#get' do
     before do
-      stub_request(:get, /perfectaudit/).to_return(body: success_body, status: 200)
+      stub_request(:get, /ocrolus/).to_return(body: success_body, status: 200)
     end
 
     # it { expect(a_request(:get, "https://www.perfectaudit.com")).to have_been_made }
@@ -33,7 +33,7 @@ describe PerfectAudit::Connection do
 
   describe '#post' do
     before do
-      stub_request(:post, /perfectaudit/).to_return(body: success_body, status: 200)
+      stub_request(:post, /ocrolus/).to_return(body: success_body, status: 200)
     end
 
     it { expect(connection).to respond_to(:post) }
